@@ -32,7 +32,7 @@ This resolved the error! However (as is always the case), this only meant I got 
 Doctrine\DBAL\Exception: Failed to connect to the database: An exception occurred in the driver: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Name or service not known in /path/to/nextcloud/lib/private/DB/Connection.php:139
 ```
 
-From first glance, this looks like something wrong in the DNS name resolution. This sent me a long way down the wrong path, changing a whole bunch of this in my docker-compose.yml file.
+From first glance, this looks like something wrong in the DNS name resolution. This sent me a long way down the wrong path, changing a whole bunch of things in my docker-compose.yml file.
 Eventually however, after a long and perilous journey over the high seas of Nextcloud forums and StackOverflow, I found [this example](https://techoverflow.net/2020/07/17/how-to-run-nextcloud-php-occ-in-a-docker-compose-configuration/) of running `php occ` in a docker-compose configuration.
 This led me to running this command:
 
