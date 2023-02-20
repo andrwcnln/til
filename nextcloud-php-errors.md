@@ -1,4 +1,4 @@
-### First error - could not find driver
+### First error - "could not find driver"
 
 I was tring to rescan the files in my Nextcloud server (running on Raspberry Pi 4 with DietPi) using the following syntax:
 
@@ -27,7 +27,10 @@ sudo apt-get install php7.4-mysql
 This resolved the error! However (as is always the case), this only meant I got a shiny new error instead:
 
 
-### Second error - Name or service not known
+
+
+
+### Second error - "Name or service not known"
 
 ```
 Doctrine\DBAL\Exception: Failed to connect to the database: An exception occurred in the driver: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Name or service not known in /path/to/nextcloud/lib/private/DB/Connection.php:139
