@@ -24,11 +24,7 @@ sudo apt-get install php7.4-mysql
 ```
 **Note: This command will change based on your OS, PHP version and database type**
 
-This resolved the error! However (as is always the case), this only meant I got a shiny new error instead:
-
-
-
-
+This resolved the error! However (as is always the case), this only meant I got a shiny new error instead:  
 
 ### Second error - "Name or service not known"
 
