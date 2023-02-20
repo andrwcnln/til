@@ -39,6 +39,6 @@ This led me to running this command:
 ```
 docker-compose exec -u www-data nextcloud-app php occ files:scan --all
 ```
-**Note: replace *nextcloud-app* with the name of your nextcloud container**
+**Note: replace nextcloud-app with the name of your nextcloud container. Also, this command must be run from the directory of your Nextcloud docker-compose.yml**
 
 ....aaaaaand, *voila!* The command runs, the files are scanned and everything is up to date.
