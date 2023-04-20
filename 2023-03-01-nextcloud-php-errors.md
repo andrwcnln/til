@@ -1,6 +1,19 @@
+---
+title: Fixing php errors in a Nextcloud docker-compose configuration
+categories:
+- til
+tags:
+- php
+- nextcloud
+- docker
+- docker-compose
+---
+
+I was trying to rescan the files in my Nextcloud server (running on Raspberry Pi 4 with DietPi), and kept running into some weird `php` errors.
+
 ### First error - "could not find driver"
 
-I was tring to rescan the files in my Nextcloud server (running on Raspberry Pi 4 with DietPi) using the following syntax:
+I was trying using the following syntax to call `occ` and scan the files:
 
 ```
 sudo -u www-data php /path/to/nextcloud/occ files:scan --all
@@ -42,3 +55,5 @@ docker-compose exec -u www-data nextcloud-app php occ files:scan --all
 **Note: replace nextcloud-app with the name of your Nextcloud container. Also, this command must be run from the directory of your Nextcloud docker-compose.yml**
 
 ....aaaaaand, *voila!* The command runs, the files are scanned and everything is up to date.
+
+![terminal output showing the files that have been successfully been scanned](/assets/images/occ.png)
